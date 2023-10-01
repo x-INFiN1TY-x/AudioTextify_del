@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AudioTextify</title>
+    <link rel="icon" href="logo.png" />
+
+    <!-- Linking bootstrap -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script async src="script.js"></script>
+
+    <!-- Linking the fonts -->
+
+    <!-- Site name font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Speech to text font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- about para fonts  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- try for free font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Direct Access to font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Adding the mobile navigation  -->
+
+    <div class="mobile-nav mob-hidden">
+      <div class="mob-left-nav">
+        <img src="logo.png" alt="Slow internet connection" />
+        <span>DOIT</span>
+      </div>
+
+      <div class="mob-right-nav">
+        <img src="three-liner.png" alt="" class="three-liner" />
+      </div>
+    </div>
+
+    <div class="mob-login-signup hidden">
+      <span class="mob-cross">&times;</span>
+      <div class="mob-login">
+        <p>LOGIN</p>
+      </div>
+
+      <div class="mob-signup">
+        <p>SIGNUP</p>
+      </div>
+    </div>
+
+    <!-- Load Spinner section  -->
+
+    <div class="load hidden">
+      <img src="spinner.png" alt="" class="spinenr-icon" />
+    </div>
+
+    <!-- Top navigation  -->
+
+    <div class="top-navigation">
+      <div class="left-nav">
+        <img src="logo.png" alt="Slow internet connection" />
+        <span>ATF</span>
+      </div>
+
+      <div class="right-nav">
+        <ul>
+          <li id="login">Log In</li>
+          <li id="signup">Start For Free</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Middel intro section  -->
+
+    <div class="container intro">
+      <div class="left-side">
+        <h5>AudioTextify</h5>
+
+        <h1>Speech To Text</h1>
+
+        <div class="about">
+          <p>
+            AudioTextify Speech To Text (ATSTT) function allows you to
+            transcript voice to subtitles in one click. Save plenty of time on
+            transcribing subtitles and boost your editing efficiency by applying
+            speech-to-text.
+          </p>
+        </div>
+
+        <div class="try">
+          <button>TRY IT FREE</button>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <video autoplay loop muted>
+          <source src="intro-vid.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <!-- Service We Provide -->
+
+    <div class="container services">
+      <h1>OUR ASSOCIATED PARTNERS</h1>
+
+      <div class="company-logo">
+        <img src="youtube.png" class="youtube" />
+        <img src="spotify.png" class="spotify" />
+        <img src="gmail.png" class="gmail" />
+        <img src="linkdein.png" class="linkdein" />
+        <img src="instagram.png" class="instagram" />
+        <img src="x.png" class="x" />
+      </div>
+    </div>
+
+    <!-- Action section -->
+
+    <div class="container stt">
+      <div class="mic">
+        <img src="tap-mic.png" alt="" />
+      </div>
+
+      <video class="lis-mic hidden" autoplay loop muted>
+        <source src="list-mic.mp4" type="video/mp4" />
+      </video>
+
+      <div class="content"></div>
+
+      <div class="delHistory">
+        <img src="delete.png" alt="No Internet" />
+      </div>
+    </div>
+  </body>
+</html>
