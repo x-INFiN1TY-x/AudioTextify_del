@@ -81,37 +81,7 @@
       href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&display=swap"
       rel="stylesheet"
     />
-        <script>
-        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-        const recoginition = new SpeechRecognition();
-        recoginition.interimResults = false;
-
-        recoginition.addEventListener("result", (event) => {
-            const transcript = event.results[0][0].transcript.toLowerCase().trim();
-            console.log("You said:", transcript);
-
-            // Display the generated text
-            displayText(transcript);
-        });
-
-        recoginition.addEventListener("end", () => {
-            document.getElementById("startButton").disabled = false;
-        });
-
-        document.getElementById("startButton").addEventListener("click", () => {
-            recoginition.start();
-            document.getElementById("startButton").disabled = true;
-        });
-
-        function displayText(text) {
-            const contentElement = document.querySelector('.content');
-            contentElement.innerHTML = <p>${text}</p>;
-        }
-
-        function displayError(errorMsg) {
-            alert(errorMsg);
-        }
-    </script>
+        
   </head>
 
   <body>
